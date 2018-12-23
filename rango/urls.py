@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     re_path(r'^$', views.index, name='index'),
-    path('about/', views.about, name='about'),
+    re_path(r'^about/', views.about, name='about'),
 ]
 
 
